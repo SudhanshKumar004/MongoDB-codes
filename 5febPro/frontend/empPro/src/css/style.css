@@ -2,9 +2,31 @@
 {
     width: 450px;
     margin: auto;
+    border: 2px solid silver;
+    padding: 10px;
+    box-shadow: 0 0 5px silver , 0 0 10px black;
 }
 
-form-label
+.wrap h1
+{
+    text-align: center;
+}
+
+.wrap Button{
+    margin: auto;
+}
+Form.Control
 {
     background-color: brown;
+}
+
+.wrapper
+{
+    height: 70vh;
+}
+
+
+#btn
+{
+    cursor: pointer;
 }

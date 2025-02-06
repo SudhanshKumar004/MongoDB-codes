@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
+import { message } from 'antd'
 
 
 const Insert = () => {
@@ -19,7 +20,7 @@ const Insert = () => {
       e.preventDefault();
       let api = "http://localhost:8000/employee/datasave";
       axios.post(api , input).then((res)=>{
-          alert(res.data)
+          message.success(res.data)
           
       })
       console.log(input);
@@ -32,7 +33,7 @@ const Insert = () => {
       <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Emp No.</Form.Label>
-        <Form.Control type="text" name='empnm ' onChange={handleInput}/>
+        <Form.Control type="text" name='empnm' onChange={handleInput}/>
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">

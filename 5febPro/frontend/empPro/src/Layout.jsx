@@ -10,7 +10,7 @@ const Layout = () => {
     <>
     <TopNav />
       <hr />
-      <div>
+      <div className='wrapper'>
         <Outlet />
       </div>
     <hr />
