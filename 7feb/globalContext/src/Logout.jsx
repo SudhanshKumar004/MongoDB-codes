@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
-import {MyContext } from './GlobalContext'
+import { myContext } from './GlobalContext'
 
 
 const Logout = () => {
-    const {user,logout} = useContext(MyContext)
+    const { user , logout } = useContext(myContext);
   return (
     <>
-      <h3>Welcome : {user.name}</h3>
-      <button onClick={()=>{logout()}}>Logout</button>
+        <h1>Welcome : {user.name} 
+            <button onClick={()=>{logout()}}>Logout</button>
+        </h1>
+      
     </>
   )
 }

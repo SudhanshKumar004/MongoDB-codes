@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
-import Logout from './Logout'
-import Login from './Login'
-import { MyContext } from './GlobalContext'
+import { myContext } from './GlobalContext'
+import Logout from './Logout';
+import Login from './Login';
+
 
 const App = () => {
-    const {user} = useContext(MyContext) 
+    const { user } = useContext(myContext);
   return (
     <>
-    <h1>My Login App</h1>
-    {user.auth} ? <Logout /> : <Login />    
-      
+      <h1>My App</h1>
+      {user.auth ? <Logout /> : <Login />}
     </>
   )
 }
