@@ -33,7 +33,7 @@ const Display = () => {
   },[])
   return (
     <>
-      <h1>Employee Data</h1>
+      <h1 align="center" style={{color:"coral"}}>Employee Data</h1>
       <Table striped bordered hover>
       <thead>
         <tr>

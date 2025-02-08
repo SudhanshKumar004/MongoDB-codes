@@ -30,3 +30,48 @@ Form.Control
 {
     cursor: pointer;
 }
+
+.searchd
+{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.searchd input{
+    border: 0; 
+    box-shadow: 0 0 2px black, 0 0 2px silver;
+    margin: 0px 10px; 
+}
+
+.searchd h1{
+    font-size: 25px;
+    font-weight: bolder;
+    
+}
+
+.sd
+{
+    font-size: 35px;
+    color: sienna;
+}
+
+.searchd button{
+    border: 0;
+    border-radius: 3px;
+    padding: 0px 10px;
+    color: whitesmoke;
+    background-color: steelblue;
+}
+
+.searchd button:hover{
+    background-color: beige;
+    color: darkslategrey;
+    border: 1px solid black;
+}
+
+.cardS
+{
+    margin: auto;
+    
+}

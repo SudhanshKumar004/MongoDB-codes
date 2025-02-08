@@ -2,3 +2,29 @@
 {
     height: 70vh;
 }
+
+/* Header.css */
+
+/* Custom styles for Navbar */
+.custom-navbar {
+  background-color: #007bff; /* Override Bootstrap's default primary color */
+  padding: 10px 0; /* Add padding */
+}
+
+/* Custom styles for Navbar Brand */
+.custom-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff !important; /* Ensure text color is white */
+}
+
+/* Custom styles for Nav Links */
+.custom-nav-link {
+  color: #ffffff !important; /* Ensure text color is white */
+  margin-right: 15px; /* Add spacing between links */
+  font-size: 1.1rem;
+}
+
+.custom-nav-link:hover {
+  color: #ffcc00 !important; /* Change color on hover */
+}

@@ -49,7 +49,7 @@ const Update = () => {
   },[mydel])
   return (
     <>
-      <h1>Edit Employee Info</h1>
+      <h1 align="center" style={{color:"cadetblue", padding:"10px" , backgroundColor:"beige"}}>Edit Employee Info</h1>
       <Table striped bordered hover>
       <thead>
         <tr>

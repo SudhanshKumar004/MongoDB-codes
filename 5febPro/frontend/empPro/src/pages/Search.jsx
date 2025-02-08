@@ -22,8 +22,8 @@ const Search = () => {
   const ans = mydata.map((key)=>{
     return(
       <>
-        <Card style={{ width: '18rem' }}>
-      <Card.Body>
+        <Card style={{ width: '18rem' }} className='cardS'>
+      <Card.Body className='cb'>
         <Card.Title>{key.name}</Card.Title>
       </Card.Body>
       <ListGroup className="list-group-flush">
@@ -37,10 +37,11 @@ const Search = () => {
   })
   return (
     <>
-      <h2>Search Data</h2>
-      Enter Emp No. <input type="text" name="empno" onChange={(e)=>{setSearch(e.target.value)}} />
+      <h2 align="center" className='sd'>Search Data</h2>
+      <div className="searchd">
+      <h1>Enter Emp No. :</h1><input type="text" name="empno" onChange={(e)=>{setSearch(e.target.value)}} />
       <button onClick={handleSubmit}>Search</button>
-
+      </div>
       <hr />
 
        {ans}
