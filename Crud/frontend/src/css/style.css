@@ -1,30 +1,247 @@
+
 .wrap
 {
-    height: 70vh;
+  height: 90vh;
+}
+.navbar-custom {
+  background: linear-gradient(45deg, #B8E0D2, #A2D8D8);  
+  padding: 14px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Header.css */
-
-/* Custom styles for Navbar */
-.custom-navbar {
-  background-color: #007bff; /* Override Bootstrap's default primary color */
-  padding: 10px 0; /* Add padding */
-}
-
-/* Custom styles for Navbar Brand */
-.custom-brand {
-  font-size: 1.5rem;
+.navbar-custom .navbar-brand {
+  font-size: 30px;
   font-weight: bold;
-  color: #ffffff !important; /* Ensure text color is white */
+  letter-spacing: 2px;
+  color:black;  
+  transition: color 0.3s ease-in-out;
 }
 
-/* Custom styles for Nav Links */
-.custom-nav-link {
-  color: #ffffff !important; /* Ensure text color is white */
-  margin-right: 15px; /* Add spacing between links */
-  font-size: 1.1rem;
+.navbar-custom .nav-link {
+  font-size: 25px;
+  font-weight: 550;
+  color: #293a4d;
+  margin: 0 15px;
+  transition: all 0.3s ease-in-out;
 }
 
-.custom-nav-link:hover {
-  color: #ffcc00 !important; /* Change color on hover */
+.navbar-custom .nav-link:hover {
+  color: green;  
+  transform: scale(1.05);  
+  background-color: rgba(255, 255, 255, 0.3);  
+  border-radius: 5px;
+}
+
+.navbar-custom .nav-link.active {
+  color: #F1C6A1 !important;  
+  font-weight: 600;
+}
+
+.navbar-custom .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: black;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: brown;
+  border-radius: 2px;
+  height: 2px;
+  width: 25px;
+}
+
+
+.navbar-custom .navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#form
+{
+    display: grid;
+    width: 20%;
+    margin: auto;
+}
+
+.custom-table-container {
+  width: 70%;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.custom-table {
+  
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 0 0 3px silver , 0 0 5px black;
+}
+
+.custom-table thead {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.custom-table tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.01);
+}
+
+#form {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  padding-top: 10px;
+  color: darkslategray;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #285585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styling for the Search Component */
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size:22px;
+  margin-left: 10px;
+  transition: border-color 0.3s ease-in-out;
+  
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: darkslategray;
+  color: white;
+  border: none;
+  width:20%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+
+.swrap
+{
+  width: 60%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+.card {
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-header {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 24px;
 }

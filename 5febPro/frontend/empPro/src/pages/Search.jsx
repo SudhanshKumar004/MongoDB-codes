@@ -39,7 +39,7 @@ const Search = () => {
     <>
       <h2 align="center" className='sd'>Search Data</h2>
       <div className="searchd">
-      <h1>Enter Emp No. :</h1><input type="text" name="empno" onChange={(e)=>{setSearch(e.target.value)}} />
+      <h1>Enter Emp No. :</h1><input type="text" name="empno" value={search} onChange={(e)=>{setSearch(e.target.value)}} />
       <button onClick={handleSubmit}>Search</button>
       </div>
       <hr />
