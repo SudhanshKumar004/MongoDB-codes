@@ -37,6 +37,7 @@ const[mydata , setMydata] = useState([])
   return (
     <>
     <h1 align="center" style={{padding:"10px" , color:"darkslategray" , textShadow:"0 0 1px black ,0 0 5px silver"}}>Book Details</h1>
+      <div className="over">
       <Table striped bordered hover className='custom-table'>
       <thead>
         <tr>
@@ -52,6 +53,7 @@ const[mydata , setMydata] = useState([])
         {ans}
       </tbody>
     </Table>
+    </div>
     </>
   )
 }

@@ -1,7 +1,7 @@
 
 .wrap
 {
-  height: 90vh;
+  height: 100%;
 }
 .navbar-custom {
   background: linear-gradient(45deg, #B8E0D2, #A2D8D8);  
@@ -117,7 +117,50 @@
 .custom-table tbody tr:hover {
   background-color: rgba(0, 123, 255, 0.1);
   transform: scale(1.01);
+  cursor:auto;
 }
+
+.custom-table2-container {
+  width: 70%;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.custom-table2 {
+  
+  font-size: 20px;
+  padding-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 0 0 3px silver , 0 0 5px black;
+}
+
+.custom-table2 thead {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-weight: bold;
+}
+
+.custom-table2 th, .custom-table td {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table2 tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-table2 tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
 
 #form {
   width: 400px;
@@ -168,7 +211,6 @@ button:hover {
 }
 
 
-/* Styling for the Search Component */
 h1 {
   font-size: 28px;
   text-align: center;
@@ -178,7 +220,7 @@ h1 {
 
 input[type="text"] {
   padding: 10px;
-  width: 250px;
+  width: 320px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size:22px;
@@ -244,4 +286,16 @@ hr {
   background-color: #f8f9fa;
   color: #333;
   font-size: 24px;
+}
+
+
+#btn
+{
+  cursor: pointer;
+}
+
+
+.over
+{
+  overflow-x: auto;
 }

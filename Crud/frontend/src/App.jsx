@@ -7,6 +7,7 @@ import Display from './pages/Display'
 import Insert from './pages/Insert'
 import Search from './pages/Search'
 import Update from './pages/Update'
+import EditData from './pages/EditData'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path='/update' element={<Update />} />
       <Route path='/insert' element={<Insert />} />
       <Route path='/search' element={<Search />} />
+      <Route path='/editdata/:id' element={<EditData />} />
       
       </Route>
     </Routes>
