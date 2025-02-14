@@ -1,0 +1,19 @@
+.wrap
+{
+    height: 100vh;
+}
+
+#navv{
+    background-color: aqua;
+    color: white;
+}
+
+.me-auto
+{
+    color: white;
+}
+
+#navcol
+{
+    color: whitesmoke;
+}

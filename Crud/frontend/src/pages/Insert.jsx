@@ -22,7 +22,6 @@ const Insert = () => {
     
   }
 
-
   const handleSubmit=(e)=>{
     e.preventDefault();
     let api = "http://localhost:8000/library/datasave";

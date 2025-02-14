@@ -14,7 +14,7 @@ const Update = () => {
 
 
   const loadData = () =>{
-    const api = "http://localhost:8000/library/datadisplay";
+    const api = "http://localhost:8000/employee/datadisplay";
     axios.get(api).then((res)=>{
       console.log(res.data);
       
@@ -29,7 +29,7 @@ const Update = () => {
   }
 
   const mydel = async(id) =>{
-    let api = `http://localhost:8000/library/delete?bookid=${id}`
+    let api = `http://localhost:8000/employee/delete?bookid=${id}`
     let res = await axios.get(api)
     alert(res.data)
 
