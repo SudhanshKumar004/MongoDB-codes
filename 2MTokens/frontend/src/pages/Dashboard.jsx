@@ -5,6 +5,7 @@ const nav = useNavigate()
     
 const logout=()=>{
         localStorage.clear();
+        nav("/login")
     }
 
 
@@ -18,7 +19,7 @@ const logout=()=>{
     <>
       <div style={{backgroundColor:"teal", height:"100px"}}>
     <h1>My DashBoard</h1>
-    <h3>Welcome : {localStorage.getItem("username")}</h3>
+    <h3>Welcome : {localStorage.getItem("name")}</h3>
     <button onClick={logout}>Logout</button>
       </div>
     </>

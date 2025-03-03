@@ -13,8 +13,6 @@ const Home = () => {
     {let api = `${API_URL}/user/authentication`
     const response = await axios.post(api,null ,{headers:{"x-auth-token": token}})
     console.log(response.data);
-    localStorage.setItem("username" , response.data.name)
-    localStorage.setItem("email" , response.data.email)
     nav("/dashboard")
   }
   }
@@ -24,7 +22,9 @@ const Home = () => {
   },[])
   return (
     <>
-      <h1>Welcome to Home Page</h1>
+    <div className='homecontainer'>
+      <h1 className='hometitle'>Welcome to Home Page</h1>
+      </div>
     </>
   )
 }

@@ -33,7 +33,7 @@ const Login = async(req,res)=>{
 
     const token = await jwt.sign({id:User._id}, process.env.SECRET_KEY, {expiresIn:"2 days"})
     console.log(token);
-    res.send({token:token});
+    res.send({token, "user":User});
     
 }
 
