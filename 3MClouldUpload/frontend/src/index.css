@@ -1,0 +1,28 @@
+.formcontainer {
+    width: 300px; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background:thistle; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formcontainer input {
+    width: 100%;
+    padding: 8px 0px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formcontainer button {
+    width: 100%;
+    padding: 10px;
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
