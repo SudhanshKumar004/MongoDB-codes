@@ -34,6 +34,7 @@ const Insert = () => {
       const response = await axios.post(api, formData)
       
       console.log(response.data);
+      alert("Submitted Successfully!")
       
     }
   return (
