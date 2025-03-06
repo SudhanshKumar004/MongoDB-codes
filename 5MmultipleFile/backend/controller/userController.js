@@ -23,7 +23,13 @@ const DataDisplay = async(req,res)=>{
     res.send(datasend)
 }
 
+const ProShow = async(req,res)=>{
+   const { id } = req.body;
+   let Product = await productModel.findById(id);
+    res.send(Product)
+}
 module.exports={
     Datasave,
-    DataDisplay
+    DataDisplay,
+    ProShow
 }

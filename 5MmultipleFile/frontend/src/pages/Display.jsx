@@ -1,16 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "./Display.css";
+import {useNavigate} from "react-router-dom"
 
 const Display = () => {
   const [mydata, setMydata] = useState([]);
-  const [selectedImages, setSelectedImages] = useState({});
+  const nav = useNavigate()
 
-  useEffect(() => {
-    const loadData = async () => {
+ const loadData = async () => {
       let response = await axios.get("http://localhost:8080/user/datadisplay");
       setMydata(response.data);
     };
+
+  useEffect(() => {
     loadData();
   }, []);
 
@@ -19,34 +21,23 @@ const Display = () => {
       <h1>Display</h1>
       <hr />
 
-      {mydata.map((item) => (
-        <div key={item.id} className="product-container">
+      {mydata.map((key) => (
+        <div>
     
           <img
-            src={`http://localhost:8080/${selectedImages[item.id] || item.defaultImage}`}
-            width={300}
-            height={250}
-            alt="Main"
-          />
+            src={`http://localhost:8080/${key.defaultImage}`} width={400} height={250} alt="Main"
+             onClick={()=>{nav(`/showproduct/${key._id}`)}}/>
 
           <br />
 
-          {item.images.map((img, index) => (
-            <img
-              key={index}
-              src={`http://localhost:8080/${img}`}
-              height={60}
-              width={60}
-              alt="Thumbnail"
-              className="thumbnail"
-              onMouseEnter={() => setSelectedImages((prev) => ({ ...prev, [item.id]: img }))} 
-              onMouseLeave={() => setSelectedImages((prev) => ({ ...prev, [item.id]: item.defaultImage }))}
+          {key.images.map((img) => (
+            <img src={`http://localhost:8080/${img}`} height={60} width={80} className="thumbnail"
             />
           ))}
 
-          <h1>Product: {item.product}</h1>
-          <h1>Brand: {item.brand}</h1>
-          <h1>Price: {item.price}</h1>
+          <h1>Product: {key.product}</h1>
+          <h1>Brand: {key.brand}</h1>
+          <h1>Price: {key.price}</h1>
         </div>
       ))}
     </>
